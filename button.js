@@ -31,9 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener for the button click
   fullscreenButton.addEventListener("click", function () {
     // Add the script dynamically
+
+    
     var scriptElement = document.createElement("script");
     scriptElement.src = "script.js";
     document.body.appendChild(scriptElement);
+
+    // hide
+    fullscreenButton.style.display = "none";
 
     // Trigger fullscreen mode
     requestFullscreen();

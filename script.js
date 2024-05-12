@@ -2,7 +2,7 @@ var textureURL =
   "lroc_color_poles_1k.jpg";
 var displacementURL =
   "ldem_3_8bit.jpg";
-var worldURL = "starmap_4k.jpg";
+var worldURL = "starmap_5k.jpg";
 
 var scene = new THREE.Scene();
 
@@ -61,7 +61,29 @@ var world = new THREE.Mesh(worldGeometry, worldMaterial);
 scene.add(world);
 
 scene.add(moon);
-camera.position.z = 7;
+var targetZ = 7; // Target z-position
+var animationDuration = 10000; // Duration of the animation in milliseconds
+var initialZ = 50; // Initial z-position of the camera
+var animationStartTime = Date.now();
+
+function animateCamera() {
+  var now = Date.now();
+  var elapsedTime = now - animationStartTime;
+  var t = elapsedTime / animationDuration; // Interpolation parameter (0 to 1)
+  if (t < 1) {
+    // Interpolate camera position from initialZ to targetZ
+    camera.position.z = initialZ + (targetZ - initialZ) * t;
+    requestAnimationFrame(animateCamera);
+  } else {
+    // Animation complete, set final position
+    camera.position.z = targetZ;
+  }
+  renderer.render(scene, camera);
+}
+
+animateCamera(); 
+ 
+
 
 moon.rotation.x = 3.1415 * 0.02;
 moon.rotation.y = 3.1415 * 1.54;
