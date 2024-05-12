@@ -7,7 +7,7 @@ function updateRemainingTime() {
   // If the current date is after the target date, remove the disabled attribute
   if (timeDifference <= 0) {
     document.getElementById("fullscreenButton").removeAttribute("disabled");
-    document.getElementById("fullscreenButton").innerHTML = "Enter Fullscreen";
+    document.getElementById("fullscreenButton").innerHTML = "Happy 23rd birthday!";
   } else {
     // Calculate remaining days, hours, minutes, and seconds
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
