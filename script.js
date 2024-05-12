@@ -2,7 +2,7 @@ var textureURL =
   "lroc_color_poles_1k.jpg";
 var displacementURL =
   "ldem_3_8bit.jpg";
-var worldURL = "hipp8_s.jpg";
+var worldURL = "starmap_4k.jpg";
 
 var scene = new THREE.Scene();
 
@@ -51,7 +51,7 @@ hemiLight.groundColor.setHSL(0.095, 1, 0.75);
 hemiLight.position.set(0, 0, 0);
 scene.add(hemiLight);
 
-var worldGeometry = new THREE.SphereGeometry(1000, 60, 60);
+var worldGeometry = new THREE.SphereGeometry(100, 60, 60);
 var worldMaterial = new THREE.MeshBasicMaterial({
   color: 0xffffff,
   map: worldTexture,
@@ -68,10 +68,10 @@ moon.rotation.y = 3.1415 * 1.54;
 
 function animate() {
   requestAnimationFrame(animate);
-  moon.rotation.y += 0.002;
+  moon.rotation.y += 0.00099;
   moon.rotation.x += 0.0001;
-  world.rotation.y += 0.0001;
-  world.rotation.x += 0.0005;
+  world.rotation.y += 0.0004;
+  world.rotation.x += 0.0001;
 
   renderer.render(scene, camera);
 }
