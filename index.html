@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift for someone</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@2410ad1a8f5844df00191600eafda59def537830/examples/js/controls/OrbitControls.js"></script>
- 
+    <script src="js/OrbitControls.js"></script>
     <style>
 body { margin: 0; overflow-y: hidden; overflow-x: hidden; }
 canvas { width: 100%; height: 100% ; vertical-align:bottom}
- 
     </style>
 </head>
 <body>
-    <button id="fullscreenButton" disabled>Enter Fullscreen</button>
-    <script src="button.js"></script>
-    <script src="time.js"></script>
-    <audio id="audioPlayer" controls style="display:none;" loop >
-    <source src="music.mp3" type="audio/mpeg"  >
+    <button id="fullscreenButton"  disabled >Enter Fullscreen</button>
+    <script src="js/button.js"></script>
+    <script src="js/time.js"></script>
+    <audio id="audioPlayer" controls loop style="display: none;">
+ 
+    <source src="music/background.mp3"   type="audio/mpeg"  >
     Your browser does not support the audio element.
     </audio>
- 
 </body>
 </html>

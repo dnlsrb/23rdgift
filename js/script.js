@@ -1,8 +1,7 @@
 var textureURL =
-  "lroc_color_poles_1k.jpg";
-var displacementURL =
-  "ldem_3_8bit.jpg";
-var worldURL = "starmap_5k.jpg";
+  "materials/lroc_color_poles_1k.jpg";
+var displacementURL = "materials/ldem_3_8bit.jpg";
+var worldURL = "materials/starmap_5k.jpg";
 
 var scene = new THREE.Scene();
 

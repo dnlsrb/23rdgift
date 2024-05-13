@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     var scriptElement = document.createElement("script");
-    scriptElement.src = "script.js";
+    scriptElement.src = "js/script.js";
     document.body.appendChild(scriptElement);
 
     // hide
