@@ -14,7 +14,7 @@
 //    Zoom - middle mouse, or mousewheel / touch: two-finger spread or squish
 //    Pan - right mouse, or left mouse + ctrl/metaKey, or arrow keys / touch: two-finger move
 
-
+ 
 THREE.OrbitControls = function (object, domElement) {
   this.object = object;
 
@@ -28,10 +28,10 @@ THREE.OrbitControls = function (object, domElement) {
 
   // How far you can dolly in and out ( PerspectiveCamera only )
   this.minDistance = 0;
-  this.maxDistance = Infinity;
+  this.maxDistance = 100;
 
   // How far you can zoom in and out ( OrthographicCamera only )
-  this.minZoom = 0;
+  this.minZoom = 50;
   this.maxZoom = Infinity;
 
   // How far you can orbit vertically, upper and lower limits.

@@ -9,8 +9,9 @@ function updateRemainingTime() {
     document.getElementById("fullscreenButton").removeAttribute("disabled");
     document.getElementById("fullscreenButton").innerHTML = "Happy 23rd birthday!";
   } else {
+    //  document.getElementById("fullscreenButton").setAttribute("disabled", true);
+
     // Calculate remaining days, hours, minutes, and seconds
-     document.getElementById("fullscreenButton").setAttribute("disabled", true);
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     var hours = Math.floor(
       (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)

@@ -7,18 +7,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
     <script src="js/OrbitControls.js"></script>
     <style>
-body { margin: 0; overflow-y: hidden; overflow-x: hidden; }
-canvas { width: 100%; height: 100% ; vertical-align:bottom}
+body { margin: 0; overflow:hidden; }
+/* canvas { width: 100%; height: 100% ; vertical-align:bottom} */
     </style>
 </head>
-<body>
-    <button id="fullscreenButton"  disabled >Enter Fullscreen</button>
+<body  style="display:flex; justify-content: center;   " >
     <script src="js/button.js"></script>
-    <script src="js/time.js"></script>
-    <audio id="audioPlayer" controls loop style="display: none;">
+ 
+
+    <div style="display:flex; justify-content: center;  align-items: end; height: 100vh; position:fixed;"> 
+                
+    <button id="fullscreenButton"     style="margin:auto;"  >Happy 23rd Birthday!</button>
+ 
+    <audio id="audioPlayer" controls loop style=" display: none; padding-bottom: 5vh;  position:fixed;  ">
  
     <source src="music/background.mp3"   type="audio/mpeg"  >
     Your browser does not support the audio element.
     </audio>
+ 
+
+    </div>
+
+    <script src="js/time.js"></script>
 </body>
+ 
+ 
 </html>

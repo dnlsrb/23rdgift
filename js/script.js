@@ -33,7 +33,7 @@ var material = new THREE.MeshPhongMaterial({
   displacementMap: displacementMap,
   displacementScale: 0.06,
   bumpMap: displacementMap,
-  bumpScale: 0.04,
+  bumpScale: 0.03,
   reflectivity: 0,
   shininess: 0,
 });
@@ -89,7 +89,7 @@ moon.rotation.y = 3.1415 * 1.54;
 
 function animate() {
   requestAnimationFrame(animate);
-  moon.rotation.y += 0.00099;
+  moon.rotation.y += 0.00050;
   moon.rotation.x += 0.0001;
   world.rotation.y += 0.0004;
   world.rotation.x += 0.0001;
