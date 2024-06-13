@@ -64,8 +64,10 @@ var targetZ = 7; // Target z-position
 var animationDuration = 10000; // Duration of the animation in milliseconds
 var initialZ = 50; // Initial z-position of the camera
 var animationStartTime = Date.now();
+const overlay = document.getElementById("overlay");
 
 function animateCamera() {
+  overlay.style.display = "block";
   var now = Date.now();
   var elapsedTime = now - animationStartTime;
   var t = elapsedTime / animationDuration; // Interpolation parameter (0 to 1)
@@ -76,6 +78,7 @@ function animateCamera() {
   } else {
     // Animation complete, set final position
     camera.position.z = targetZ;
+    overlay.style.display = "none";
   }
   renderer.render(scene, camera);
 }
@@ -104,4 +107,4 @@ function onResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-window.addEventListener("resize", onResize, false);
+window.addEventListener("resize", onResize, true);

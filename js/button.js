@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the button
   var fullscreenButton = document.getElementById("fullscreenButton");
-  var audioPlayer = document.getElementById("audioPlayer");
+  var mainaudio = document.getElementById("main-audio");
  
 
   // Function to request fullscreen mode
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to play the audio
   function playAudio() {
-    var audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.play();
+    var mainaudio = document.getElementById("main-audio");
+    mainaudio.click();
   }
 
   // Event listener for the button click
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // hide
     fullscreenButton.style.display = "none";
-    audioPlayer.style.display = "block";
+
  
     // Trigger fullscreen mode
     requestFullscreen();
