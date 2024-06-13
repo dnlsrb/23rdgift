@@ -155,7 +155,9 @@ mainAudio.addEventListener("ended", () => {
 moreMusicBtn.addEventListener("click", () => {
   musicList.classList.toggle("show");
 });
- 
+musicList.addEventListener("long-press", () =>{
+    moreMusicBtn.click();
+});
 musicList.addEventListener("click", () => {
    moreMusicBtn.click();
 });
