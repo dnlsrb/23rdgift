@@ -8,8 +8,8 @@
 }
  
 :root{
-  --pink: #ff74a4;
-  --violet: #9f6ea3;
+  --pink: #ffffff;
+  --violet: #2c2c2c;
   /* --lightblack: #515C6F; */
   --lightblack: #cecaca;
   --white: rgba(255, 255, 255, 0.15);
@@ -45,6 +45,7 @@
 .wrapper i{
   cursor: pointer;
 }
+ 
 .top-bar, .progress-area .song-timer, 
 .controls, .music-list .header, .music-list ul li{
   display: flex;
@@ -189,7 +190,7 @@
   width: 100%;
   top:0;
   height:100vh;
- 
+    margin:auto;
   opacity: 0;
   pointer-events: none;
   z-index: 5;

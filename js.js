@@ -10,8 +10,7 @@ const wrapper = document.querySelector(".wrapper"),
   progressArea = wrapper.querySelector(".progress-area"),
   progressBar = progressArea.querySelector(".progress-bar"),
   musicList = wrappertwo.querySelector(".music-list"),
-  moreMusicBtn = wrapper.querySelector("#more-music"),
-  closemoreMusic = musicList.querySelector("#close");
+  moreMusicBtn = wrapper.querySelector("#more-music");
 let musicIndex = Math.floor(Math.random() * allMusic.length + 1);
 isMusicPaused = true;
 window.addEventListener("load", () => {
@@ -156,11 +155,9 @@ mainAudio.addEventListener("ended", () => {
 moreMusicBtn.addEventListener("click", () => {
   musicList.classList.toggle("show");
 });
-closemoreMusic.addEventListener("click", () => {
-  moreMusicBtn.click();
-});
+ 
 musicList.addEventListener("click", () => {
-    musicList.classList.toggle("show");
+   moreMusicBtn.click();
 });
 const ulTag = wrappertwo.querySelector("ul");
 // let create li tags according to array length for list
