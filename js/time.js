@@ -1,7 +1,7 @@
 // Function to calculate remaining time and update button text
 function updateRemainingTime() {
   var currentDate = new Date();
-  var targetDate = new Date("June 26, 2024");
+  var targetDate = new Date("June 15, 2024");
   var timeDifference = targetDate.getTime() - currentDate.getTime();
 
   // If the current date is after the target date, remove the disabled attribute
@@ -15,7 +15,7 @@ function updateRemainingTime() {
       "(Click me)" +
       "</div>";
   } else {
-    //  document.getElementById("fullscreenButton").setAttribute("disabled", true);
+     document.getElementById("fullscreenButton").setAttribute("disabled", true);
 
     // Calculate remaining days, hours, minutes, and seconds
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
