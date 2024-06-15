@@ -17,7 +17,18 @@ body { display:flex; justify-content: center;  align-items: end; margin: 0; over
     </style>
 </head>
 <body>
-    <div class="wrappertwo"  > 
+  <button title="Fullscreen" id="fullscreen" class="material-icons md-36" style="background-color: transparent;
+  border-color: transparent; position:fixed; 
+  top:0;
+   left:0; 
+  background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  z-index: 200;
+  display: inline-block; /* Ensures proper layout */">fullscreen</button>
+    
+  <div class="wrappertwo"  > 
     <div class="music-list">
       <div class="header">
         <div class="row">
@@ -34,9 +45,9 @@ body { display:flex; justify-content: center;  align-items: end; margin: 0; over
 </div>
 
     <script src="js/button.js"></script>
- 
+
     <button  class="dot"  id="fullscreenButton"   style="margin:auto;"  >Happy 23rd Birthday! </button>
-    <div style="display:flex; justify-content: end;  align-items: end;  position:fixed; "> 
+<div style="display:flex; justify-content: end;  align-items: end;  position:fixed; z-index: 300;"> 
                 
  
  
@@ -72,11 +83,12 @@ body { display:flex; justify-content: center;  align-items: end; margin: 0; over
 
 
 
-</div>
+  </div>
 </div>
 <div id="overlay"></div>
+<script src="js/fullscreen.js"></script>
   <script src="js/music-list.js"></script>
-   <script src="js.js"></script>
+   <script src="js/music.js"></script>
     <script src="js/time.js"></script>
 </body>
  
