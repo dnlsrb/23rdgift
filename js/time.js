@@ -52,4 +52,4 @@ function updateRemainingTime() {
 updateRemainingTime();
 
 // Update remaining time every second
-// setInterval(updateRemainingTime, 1000);
+setInterval(updateRemainingTime, 1000);
