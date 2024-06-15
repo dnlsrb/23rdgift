@@ -6,7 +6,15 @@
   box-sizing: border-box;
  font-family: "Nanum Gothic", sans-serif;
 }
- 
+body{
+  display:flex; 
+  justify-content: center;  
+  align-items: end;
+  margin: 0; 
+  overflow:hidden; 
+  height: 100vh; 
+  background-color: black; 
+}
 :root{
   --pink: #37856b;
   --violet: #2c2c2c;
@@ -54,7 +62,18 @@ border-color:transparent;
 .wrappertwo{
   z-index: 200;
 }
-
+#fullscreen{
+  background-color: transparent;
+  border-color: transparent; position:fixed; 
+  top:0;
+   left:0; 
+  background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  z-index: 200;
+  display: inline-block;
+}
 .wrapper{
   width: 360px;
   padding: 25px 30px;
