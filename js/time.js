@@ -15,7 +15,7 @@ function updateRemainingTime() {
       "(Click me)" +
       "</div>";
   } else {
-     document.getElementById("fullscreenButton").setAttribute("disabled", true);
+    //  document.getElementById("fullscreenButton").setAttribute("disabled", true);
 
     // Calculate remaining days, hours, minutes, and seconds
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
