@@ -19,6 +19,7 @@ function updateRemainingTime() {
 
     // Calculate remaining days, hours, minutes, and seconds
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var total = days + 1;
     var hours = Math.floor(
       (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
@@ -34,7 +35,7 @@ function updateRemainingTime() {
       // "</span>" +
       '<span style=" font-size:100px;">' +
       "<strong>" +
-      days +
+      total +
       "</strong>" +
       "</span>" +
       "</div>" +
