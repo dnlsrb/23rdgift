@@ -7,19 +7,61 @@
 //   }
 //paste it inside the array as more as you want music then you don't need to do any other thing
 let allMusic = [
+  // {
+  //   name: "Korean",
+  //   artist: "Jordan Schor",
+  //   img: "music-1",
+  //   src: "music2",
+  // },
+
   {
-    name: "Korean",
-    artist: "Jordan Schor",
-    img: "music-1",
+    name: "Moonlight",
+    artist: "Ariana Grande",
+    img: "ar",
+    src: "music1",
+  },
+  {
+    name: "Enchanted",
+    artist: "Taylor Swift",
+    img: "ty",
     src: "music2",
   },
   {
-    name: "blehbleh",
-    artist: "Audio Library",
-    img: "music-2",
-    src: "music1",
+    name: "Lover",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "music3",
   },
-  
+  {
+    name: "Wildest Dreams",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "music4",
+  },
+  {
+    name: "New Years Day",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "music5",
+  },
+  {
+    name: "Back to December (Taylor Version)",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "music6",
+  },
+  {
+    name: "Mine",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "musi7",
+  },
+  {
+    name: "You Are In Love (Taylor Version)",
+    artist: "Taylor Swift",
+    img: "ty",
+    src: "music8",
+  },
 
   // like this paste it and remember to give comma after ending of this bracket }
   // {

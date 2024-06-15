@@ -11,7 +11,11 @@ const wrapper = document.querySelector(".wrapper"),
   progressBar = progressArea.querySelector(".progress-bar"),
   musicList = wrappertwo.querySelector(".music-list"),
   moreMusicBtn = wrapper.querySelector("#more-music");
-let musicIndex = Math.floor(Math.random() * allMusic.length + 1);
+// RANDOM MUSIC
+// let musicIndex = Math.floor(Math.random() * allMusic.length + 1);
+
+// I CHOOSE ONLY THIS
+let musicIndex = 1;
 isMusicPaused = true;
 window.addEventListener("load", () => {
   loadMusic(musicIndex);
