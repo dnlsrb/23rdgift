@@ -54,7 +54,7 @@ let allMusic = [
     name: "Mine",
     artist: "Taylor Swift",
     img: "ty",
-    src: "musi7",
+    src: "music7",
   },
   {
     name: "You Are In Love (Taylor Version)",
