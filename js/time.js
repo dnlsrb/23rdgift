@@ -41,7 +41,7 @@ function updateRemainingTime() {
       "</div>" +
       '<div  style="font-size:20px;">' +
       "<strong>" +
-      " days left" +
+      "🎈days left🎈" +
       "</strong>" +
       "</div>" +
       "</div>";
