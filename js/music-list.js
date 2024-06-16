@@ -21,6 +21,12 @@ let allMusic = [
     src: "music1",
   },
   {
+    name: "pov",
+    artist: "Ariana Grande",
+    img: "ar",
+    src: "music9",
+  },
+  {
     name: "Enchanted",
     artist: "Taylor Swift",
     img: "ty",
