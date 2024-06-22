@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the button
   var fullscreenButton = document.getElementById("fullscreenButton");
   var wrapper = document.getElementById("controls-wrapper");
+  var star_background = document.getElementById("wrapper-star");
   var mainaudio = document.getElementById("main-audio");
  
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // hide
     fullscreenButton.style.display = "none";
+    star_background.style.display = "none";
     wrapper.style.display = "block";
  
     // Trigger fullscreen mode

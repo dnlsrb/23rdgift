@@ -27,6 +27,12 @@ let allMusic = [
     src: "music9",
   },
   {
+    name: "intro (end of the world)",
+    artist: "Ariana Grande",
+    img: "ar",
+    src: "music10",
+  },
+  {
     name: "Enchanted",
     artist: "Taylor Swift",
     img: "ty",

@@ -8,7 +8,7 @@ function updateRemainingTime() {
   if (timeDifference <= 0) {
     document.getElementById("fullscreenButton").removeAttribute("disabled");
     document.getElementById("fullscreenButton").innerHTML =
-      '<div class="glow" style="color:white; font-size:30px;" >' +
+      '<div class="glow " style="color:white; font-size:30px;" >' +
       "<strong> Happy 23rd birthday! </strong>" +
       "</div>" +
       '<div style="color:white;   " >' +
@@ -28,7 +28,7 @@ function updateRemainingTime() {
 
     // Update button text with remaining time
     document.getElementById("fullscreenButton").innerHTML =
-      '<div class="glow"style="color:white;" >' +
+      '<div   class="glow "style="color:white;" >' +
       '<div style="display:flex; align-items:center; justify-content:center;" >' +
       // '<span class="material-icons  md-36">' +
       // "timer" +
@@ -41,7 +41,7 @@ function updateRemainingTime() {
       "</div>" +
       '<div  style="font-size:20px;">' +
       "<strong>" +
-      "🎈days left🎈" +
+      "days left" +
       "</strong>" +
       "</div>" +
       "</div>";
