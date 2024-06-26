@@ -32,12 +32,12 @@ let allMusic = [
     img: "ar",
     src: "music10",
   },
-  {
-    name: "Enchanted",
-    artist: "Taylor Swift",
-    img: "ty",
-    src: "music2",
-  },
+  // {
+  //   name: "Enchanted",
+  //   artist: "Taylor Swift",
+  //   img: "ty",
+  //   src: "music2",
+  // },
   {
     name: "Lover",
     artist: "Taylor Swift",
@@ -56,12 +56,12 @@ let allMusic = [
     img: "ty",
     src: "music5",
   },
-  {
-    name: "Back to December (Taylor Version)",
-    artist: "Taylor Swift",
-    img: "ty",
-    src: "music6",
-  },
+  // {
+  //   name: "Back to December (Taylor Version)",
+  //   artist: "Taylor Swift",
+  //   img: "ty",
+  //   src: "music6",
+  // },
   {
     name: "Mine",
     artist: "Taylor Swift",
