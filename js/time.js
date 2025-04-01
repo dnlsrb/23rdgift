@@ -9,7 +9,7 @@ function updateRemainingTime() {
     document.getElementById("fullscreenButton").removeAttribute("disabled");
     document.getElementById("fullscreenButton").innerHTML =
       '<div class="glow " style="color:white; font-size:30px;" >' +
-      "<strong> Happy 23rd birthday! </strong>" +
+      "<strong> Happy 24th birthday! </strong>" +
       "</div>" +
       '<div style="color:white;   " >' +
       "(Click me)" +
