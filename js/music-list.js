@@ -13,12 +13,18 @@ let allMusic = [
   //   img: "music-1",
   //   src: "music2",
   // },
-
+  
   {
     name: "Moonlight",
     artist: "Ariana Grande",
     img: "ar",
     src: "music1",
+  },
+  {
+    name: "....",
+    artist: "....",
+    img: "ar",
+    src: "music15",
   },
   {
     name: "pov",
