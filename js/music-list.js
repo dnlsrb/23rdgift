@@ -21,6 +21,12 @@ let allMusic = [
     src: "music1",
   },
   {
+    name: "Im sorry",
+    artist: "Im sorry",
+    img: "ar",
+    src: "music50",
+  },
+  {
     name: "....",
     artist: "....",
     img: "ar",
