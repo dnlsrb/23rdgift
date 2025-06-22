@@ -1,7 +1,7 @@
 // Function to calculate remaining time and update button text
 function updateRemainingTime() {
   var currentDate = new Date();
-  var targetDate = new Date("June 25, 2025");
+  var targetDate = new Date("June 22, 2025");
   var timeDifference = targetDate.getTime() - currentDate.getTime();
 
   // If the current date is after the target date, remove the disabled attribute
